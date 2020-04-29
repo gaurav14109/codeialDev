@@ -71,7 +71,7 @@ gulp.task('image', function(done){
 
 })
 
-//Deleting the previous builds when restart is done
+//Deleting the previous builds when restart is done run guld
 
 gulp.task('clean:assets', function(done){
 
@@ -80,7 +80,8 @@ gulp.task('clean:assets', function(done){
 
 });
 
-//cretaing series of build in one task
+//cretaing series of build in one task just run gulp build. this gulp cli.
+//calling the task for css js and images in series and running the main task build.
 
 gulp.task('build', gulp.series('clean:assets','css','js','image'), function(done){
 

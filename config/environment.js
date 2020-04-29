@@ -11,7 +11,7 @@ const accessLogStream = rf.createStream('access.log',{//creating access.log file
 });
 
 const development = {
-
+//to access the enviroment variable we use proces.en.variable name.
     name:'development',
     assest_path:'./assets',
     session_cookie_key:'codeial',
@@ -67,3 +67,7 @@ const production = {
 //eval("2+2")=4 string value to expression
  module.exports = eval(process.env.CODEIAL_ENVIRONMENT) == undefined ? development : eval(process.env.CODEIAL_ENVIRONMENT);
 //ternary
+//vi ~/.bashprofile
+//export
+//source ~/.bashprofile loading variable in to the memory 
+//process.env.variable to access the variable.
